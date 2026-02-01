@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.kvds.core.KeyValueStoreIntegrationTest
--------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.493 s -- in com.kvds.core.KeyValueStoreIntegrationTest

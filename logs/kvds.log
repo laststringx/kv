@@ -3163,3 +3163,199 @@ java.lang.IllegalArgumentException: Invalid log entry format: corrupted|entry
 2026-02-01 23:21:13.748 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit4270533609946011443\test-wal.log
 2026-02-01 23:21:13.756 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 3 entries from WAL
 2026-02-01 23:21:13.757 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit4270533609946011443\test-wal.log
+2026-02-01 23:36:02.077 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+2026-02-01 23:36:02.081 [com.kvds.cli.KVDSCli.main()] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: kvds-cli.log
+2026-02-01 23:36:02.084 [com.kvds.cli.KVDSCli.main()] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+2026-02-01 23:36:02.086 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 0 entries from WAL
+2026-02-01 23:36:02.086 [com.kvds.cli.KVDSCli.main()] INFO  c.kvds.recovery.RecoveryManagerImpl - No entries to recover
+2026-02-01 23:36:02.087 [com.kvds.cli.KVDSCli.main()] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+2026-02-01 23:36:42.909 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=username
+2026-02-01 23:36:52.618 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=username, found=true
+2026-02-01 23:36:59.663 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=hello, found=false
+2026-02-01 23:37:12.554 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=username, found=true
+2026-02-01 23:37:13.865 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=email
+2026-02-01 23:37:31.818 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=email, found=true
+2026-02-01 23:37:31.827 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=age
+2026-02-01 23:37:31.828 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=age, found=true
+2026-02-01 23:37:31.831 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=status
+2026-02-01 23:37:31.833 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=status, found=true
+2026-02-01 23:37:31.836 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=status
+2026-02-01 23:37:31.837 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=status, found=true
+2026-02-01 23:37:31.838 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=temp_data
+2026-02-01 23:37:31.840 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=temp_data, found=true
+2026-02-01 23:37:31.844 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=temp_data
+2026-02-01 23:37:31.845 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=temp_data, found=false
+2026-02-01 23:37:31.845 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=nonexistent_key, found=false
+2026-02-01 23:37:31.848 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=count
+2026-02-01 23:37:31.848 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=count, found=true
+2026-02-01 23:37:31.854 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=session_id
+2026-02-01 23:37:31.854 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=session_id, found=true
+2026-02-01 23:37:31.857 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key1
+2026-02-01 23:37:31.858 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=true
+2026-02-01 23:37:31.860 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key1
+2026-02-01 23:37:31.861 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=false
+2026-02-01 23:37:31.863 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=symbol_test
+2026-02-01 23:37:31.865 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=symbol_test, found=true
+2026-02-01 23:37:31.867 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=counter
+2026-02-01 23:37:31.869 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=counter
+2026-02-01 23:37:34.154 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=counter
+2026-02-01 23:38:27.559 [com.kvds.cli.KVDSCli.main()] DEBUG com.kvds.storage.InMemoryStorage - Storage cleared
+2026-02-01 23:38:27.559 [com.kvds.cli.KVDSCli.main()] INFO  com.kvds.core.KeyValueStoreImpl - Store cleared
+2026-02-01 23:38:32.076 [com.kvds.cli.KVDSCli.main()] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: kvds-cli.log
+2026-02-01 23:38:32.077 [com.kvds.cli.KVDSCli.main()] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+2026-02-01 23:50:57.113 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit17557528636799148557\test-async-wal.log
+2026-02-01 23:50:57.123 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog started: queueSize=10000, batchSize=100, batchTimeoutMs=10
+2026-02-01 23:50:57.123 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread started
+2026-02-01 23:50:57.171 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 992 pending entries
+2026-02-01 23:50:57.186 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 8 entries
+2026-02-01 23:50:57.304 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:57.398 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:57.492 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:57.586 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:57.687 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:57.782 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:57.881 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:57.979 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:58.073 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:58.076 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 0 pending entries
+2026-02-01 23:50:58.081 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 916 entries from WAL
+2026-02-01 23:50:58.095 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - Closing AsyncWriteAheadLog...
+2026-02-01 23:50:58.095 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 0 pending entries
+2026-02-01 23:50:58.165 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 92 entries
+2026-02-01 23:50:58.165 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread stopped
+2026-02-01 23:50:58.165 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit17557528636799148557\test-async-wal.log
+2026-02-01 23:50:58.165 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog closed
+2026-02-01 23:50:58.201 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit16361641017073639865\test-async-wal.log
+2026-02-01 23:50:58.203 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog started: queueSize=10000, batchSize=100, batchTimeoutMs=10
+2026-02-01 23:50:58.204 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 100 pending entries
+2026-02-01 23:50:58.205 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread started
+2026-02-01 23:50:58.207 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - Closing AsyncWriteAheadLog...
+2026-02-01 23:50:58.208 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 0 pending entries
+2026-02-01 23:50:58.322 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:58.323 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread stopped
+2026-02-01 23:50:58.324 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit16361641017073639865\test-async-wal.log
+2026-02-01 23:50:58.324 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog closed
+2026-02-01 23:50:58.331 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit16231162957390258191\test-async-wal.log
+2026-02-01 23:50:58.331 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog started: queueSize=10000, batchSize=100, batchTimeoutMs=10
+2026-02-01 23:50:58.333 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread started
+2026-02-01 23:50:58.336 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - Closing AsyncWriteAheadLog...
+2026-02-01 23:50:58.336 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 0 pending entries
+2026-02-01 23:50:58.352 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread stopped
+2026-02-01 23:50:58.353 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit16231162957390258191\test-async-wal.log
+2026-02-01 23:50:58.353 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog closed
+2026-02-01 23:50:58.359 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit7058493308998613928\test-async-wal.log
+2026-02-01 23:50:58.359 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog started: queueSize=10000, batchSize=100, batchTimeoutMs=10
+2026-02-01 23:50:58.361 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - Closing AsyncWriteAheadLog...
+2026-02-01 23:50:58.361 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 50 pending entries
+2026-02-01 23:50:58.362 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread started
+2026-02-01 23:50:58.426 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 50 entries
+2026-02-01 23:50:58.426 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread stopped
+2026-02-01 23:50:58.426 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit7058493308998613928\test-async-wal.log
+2026-02-01 23:50:58.426 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog closed
+2026-02-01 23:50:58.426 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit7058493308998613928\test-async-wal.log
+2026-02-01 23:50:58.426 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 50 entries from WAL
+2026-02-01 23:50:58.426 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit7058493308998613928\test-async-wal.log
+2026-02-01 23:50:58.436 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit3771910887959963291\test-async-wal.log
+2026-02-01 23:50:58.437 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog started: queueSize=10000, batchSize=100, batchTimeoutMs=10
+2026-02-01 23:50:58.437 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread started
+2026-02-01 23:50:58.439 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 970 pending entries
+2026-02-01 23:50:58.483 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 30 entries
+2026-02-01 23:50:58.579 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:58.670 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:58.759 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:58.845 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:58.935 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:59.023 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:59.111 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:59.207 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:59.296 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 100 entries
+2026-02-01 23:50:59.298 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 0 pending entries
+2026-02-01 23:50:59.299 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 934 entries from WAL
+2026-02-01 23:50:59.300 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - Closing AsyncWriteAheadLog...
+2026-02-01 23:50:59.300 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 0 pending entries
+2026-02-01 23:50:59.370 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 70 entries
+2026-02-01 23:50:59.371 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread stopped
+2026-02-01 23:50:59.371 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit3771910887959963291\test-async-wal.log
+2026-02-01 23:50:59.371 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog closed
+2026-02-01 23:50:59.377 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit10706598974518507404\test-async-wal.log
+2026-02-01 23:50:59.379 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog started: queueSize=10000, batchSize=100, batchTimeoutMs=10
+2026-02-01 23:50:59.379 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread started
+2026-02-01 23:50:59.379 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 87 pending entries
+2026-02-01 23:50:59.405 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 13 entries
+2026-02-01 23:50:59.407 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 0 pending entries
+2026-02-01 23:50:59.408 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 15 entries from WAL
+2026-02-01 23:50:59.409 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - Closing AsyncWriteAheadLog...
+2026-02-01 23:50:59.410 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 0 pending entries
+2026-02-01 23:50:59.496 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 87 entries
+2026-02-01 23:50:59.497 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread stopped
+2026-02-01 23:50:59.497 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit10706598974518507404\test-async-wal.log
+2026-02-01 23:50:59.497 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog closed
+2026-02-01 23:50:59.505 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit2088753538765585398\test-async-wal.log
+2026-02-01 23:50:59.505 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog started: queueSize=10000, batchSize=100, batchTimeoutMs=10
+2026-02-01 23:50:59.505 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - Closing AsyncWriteAheadLog...
+2026-02-01 23:50:59.505 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread started
+2026-02-01 23:50:59.506 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread stopped
+2026-02-01 23:50:59.506 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 0 pending entries
+2026-02-01 23:50:59.506 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit2088753538765585398\test-async-wal.log
+2026-02-01 23:50:59.506 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog closed
+2026-02-01 23:50:59.511 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit2477968046215639432\test-async-wal.log
+2026-02-01 23:50:59.511 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog started: queueSize=10000, batchSize=100, batchTimeoutMs=10
+2026-02-01 23:50:59.512 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread started
+2026-02-01 23:50:59.512 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 4 pending entries
+2026-02-01 23:50:59.512 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 0 pending entries
+2026-02-01 23:50:59.516 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 2 entries from WAL
+2026-02-01 23:50:59.517 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - Closing AsyncWriteAheadLog...
+2026-02-01 23:50:59.517 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 0 pending entries
+2026-02-01 23:50:59.520 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 4 entries
+2026-02-01 23:50:59.520 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread stopped
+2026-02-01 23:50:59.521 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit2477968046215639432\test-async-wal.log
+2026-02-01 23:50:59.521 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog closed
+2026-02-01 23:50:59.528 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit16663701655888514290\test-async-wal.log
+2026-02-01 23:50:59.529 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog started: queueSize=10000, batchSize=100, batchTimeoutMs=10
+2026-02-01 23:50:59.529 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread started
+2026-02-01 23:50:59.530 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 20 pending entries
+2026-02-01 23:50:59.624 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 80 entries
+2026-02-01 23:50:59.625 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 0 pending entries
+2026-02-01 23:50:59.625 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 82 entries from WAL
+2026-02-01 23:50:59.627 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - Closing AsyncWriteAheadLog...
+2026-02-01 23:50:59.628 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 0 pending entries
+2026-02-01 23:50:59.641 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 20 entries
+2026-02-01 23:50:59.646 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread stopped
+2026-02-01 23:50:59.647 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit16663701655888514290\test-async-wal.log
+2026-02-01 23:50:59.647 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog closed
+2026-02-01 23:50:59.651 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit11052169780820376554\test-async-wal.log
+2026-02-01 23:50:59.652 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog started: queueSize=10000, batchSize=100, batchTimeoutMs=10
+2026-02-01 23:50:59.652 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread started
+2026-02-01 23:50:59.652 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - Closing AsyncWriteAheadLog...
+2026-02-01 23:50:59.652 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 0 pending entries
+2026-02-01 23:50:59.669 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread stopped
+2026-02-01 23:50:59.670 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit11052169780820376554\test-async-wal.log
+2026-02-01 23:50:59.670 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog closed
+2026-02-01 23:50:59.670 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit11052169780820376554\test-async-wal.log
+2026-02-01 23:50:59.671 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog started: queueSize=1000, batchSize=10, batchTimeoutMs=5
+2026-02-01 23:50:59.671 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread started
+2026-02-01 23:50:59.671 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 40 pending entries
+2026-02-01 23:50:59.691 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 10 entries
+2026-02-01 23:50:59.709 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 10 entries
+2026-02-01 23:50:59.721 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 10 entries
+2026-02-01 23:50:59.730 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 10 entries
+2026-02-01 23:50:59.732 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 0 pending entries
+2026-02-01 23:50:59.733 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 43 entries from WAL
+2026-02-01 23:50:59.733 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - Closing AsyncWriteAheadLog...
+2026-02-01 23:50:59.733 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 0 pending entries
+2026-02-01 23:50:59.737 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 10 entries
+2026-02-01 23:50:59.737 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread stopped
+2026-02-01 23:50:59.737 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit11052169780820376554\test-async-wal.log
+2026-02-01 23:50:59.737 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog closed
+2026-02-01 23:50:59.743 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit454508682494463837\test-async-wal.log
+2026-02-01 23:50:59.743 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog started: queueSize=10000, batchSize=100, batchTimeoutMs=10
+2026-02-01 23:50:59.743 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread started
+2026-02-01 23:50:59.743 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 1 pending entries
+2026-02-01 23:50:59.743 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 0 pending entries
+2026-02-01 23:50:59.745 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 1 entries from WAL
+2026-02-01 23:50:59.745 [AsyncWAL-Writer] DEBUG com.kvds.wal.AsyncWriteAheadLog - Wrote batch of 1 entries
+2026-02-01 23:50:59.745 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - Closing AsyncWriteAheadLog...
+2026-02-01 23:50:59.745 [main] DEBUG com.kvds.wal.AsyncWriteAheadLog - Flushing 0 pending entries
+2026-02-01 23:50:59.759 [AsyncWAL-Writer] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWAL writer thread stopped
+2026-02-01 23:50:59.759 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit454508682494463837\test-async-wal.log
+2026-02-01 23:50:59.759 [main] INFO  com.kvds.wal.AsyncWriteAheadLog - AsyncWriteAheadLog closed

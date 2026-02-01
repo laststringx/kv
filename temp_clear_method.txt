@@ -1,0 +1,13 @@
+﻿    }
+    
+    @Override
+    public void clear() {
+        // Flush pending writes before clearing
+        flush();
+        // Clear the queue
+        writeQueue.clear();
+        // Clear the underlying WAL
+        delegate.clear();
+    }
+    
+    @Override

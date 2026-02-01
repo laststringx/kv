@@ -1,4 +1,5 @@
 com\kvds\wal\LogEntryTest.class
+com\kvds\wal\AsyncWriteAheadLogTest.class
 com\kvds\recovery\RecoveryManagerImplTest.class
 com\kvds\wal\WriteAheadLogImplTest.class
 com\kvds\storage\InMemoryStorageTest.class
