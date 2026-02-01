@@ -1,0 +1,11 @@
+C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\exception\KVDSException.java
+C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\core\KeyValueStore.java
+C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\recovery\RecoveryManager.java
+C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\wal\WriteAheadLog.java
+C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\storage\Storage.java
+C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\wal\Operation.java
+C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\core\KeyValueStoreImpl.java
+C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\wal\WriteAheadLogImpl.java
+C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\storage\InMemoryStorage.java
+C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\wal\LogEntry.java
+C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\recovery\RecoveryManagerImpl.java

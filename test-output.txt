@@ -1,0 +1,1573 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.kvds:kv-datastore >------------------------
+[INFO] Building Key-Value Data Store 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.11:prepare-agent (default) @ kv-datastore ---
+[INFO] argLine set to -javaagent:C:\\Users\\pratt\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.11\\org.jacoco.agent-0.8.11-runtime.jar=destfile=C:\\Users\\pratt\\source\\repos\\KV-DS\\target\\jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ kv-datastore ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ kv-datastore ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ kv-datastore ---
+[INFO] skip non existing resourceDirectory C:\Users\pratt\source\repos\KV-DS\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ kv-datastore ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 6 source files with javac [debug target 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.2.2:test (default-test) @ kv-datastore ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.kvds.core.KeyValueStoreImplTest
+23:19:56.175 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.184 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.224 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.224 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.228 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.229 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.231 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.232 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.232 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key1
+23:19:56.235 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key1
+23:19:56.235 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=true
+23:19:56.240 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.241 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.246 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.246 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.246 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key1
+23:19:56.246 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key2
+23:19:56.247 [main] DEBUG com.kvds.storage.InMemoryStorage - Storage cleared
+23:19:56.247 [main] INFO  com.kvds.core.KeyValueStoreImpl - Store cleared
+23:19:56.247 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=false
+23:19:56.247 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key2, found=false
+23:19:56.249 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.249 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.250 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.255 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.255 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.259 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.259 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.263 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.264 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.267 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.267 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.268 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key1
+23:19:56.268 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=true
+23:19:56.271 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.271 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.274 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.274 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.274 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=nonexistent, found=false
+23:19:56.278 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.278 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.279 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=nonexistent
+23:19:56.282 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.282 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.288 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.288 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.291 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.292 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.292 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key1
+23:19:56.292 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key1
+23:19:56.292 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=false
+23:19:56.294 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.295 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.298 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.298 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized without WAL
+23:19:56.298 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key1
+23:19:56.298 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key2
+23:19:56.298 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key3
+23:19:56.298 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=true
+23:19:56.298 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key2, found=true
+23:19:56.300 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key3, found=true
+23:19:56.300 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key2
+23:19:56.300 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key2, found=false
+23:19:56.300 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=true
+23:19:56.300 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key3, found=true
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.601 s -- in com.kvds.core.KeyValueStoreImplTest
+[INFO] Running com.kvds.core.KeyValueStoreIntegrationTest
+23:19:56.412 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit17979417280056975046\test-wal.log
+23:19:56.413 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.414 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.416 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 0 entries from WAL
+23:19:56.416 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - No entries to recover
+23:19:56.416 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.432 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key0
+23:19:56.434 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key1
+23:19:56.437 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key2
+23:19:56.439 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key3
+23:19:56.441 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key4
+23:19:56.444 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key5
+23:19:56.446 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key6
+23:19:56.448 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key7
+23:19:56.450 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key8
+23:19:56.452 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key9
+23:19:56.455 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key10
+23:19:56.457 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key11
+23:19:56.459 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key12
+23:19:56.461 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key13
+23:19:56.463 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key14
+23:19:56.465 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key15
+23:19:56.466 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key16
+23:19:56.469 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key17
+23:19:56.470 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key18
+23:19:56.473 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key19
+23:19:56.475 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key20
+23:19:56.477 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key21
+23:19:56.478 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key22
+23:19:56.479 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key23
+23:19:56.480 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key24
+23:19:56.481 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key25
+23:19:56.483 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key26
+23:19:56.484 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key27
+23:19:56.484 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key28
+23:19:56.485 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key29
+23:19:56.487 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key30
+23:19:56.488 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key31
+23:19:56.489 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key32
+23:19:56.489 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key33
+23:19:56.490 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key34
+23:19:56.491 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key35
+23:19:56.492 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key36
+23:19:56.493 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key37
+23:19:56.494 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key38
+23:19:56.494 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key39
+23:19:56.495 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key40
+23:19:56.497 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key41
+23:19:56.497 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key42
+23:19:56.499 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key43
+23:19:56.500 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key44
+23:19:56.502 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key45
+23:19:56.503 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key46
+23:19:56.504 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key47
+23:19:56.505 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key48
+23:19:56.506 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key49
+23:19:56.507 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key50
+23:19:56.507 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key51
+23:19:56.508 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key52
+23:19:56.509 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key53
+23:19:56.510 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key54
+23:19:56.511 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key55
+23:19:56.513 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key56
+23:19:56.514 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key57
+23:19:56.515 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key58
+23:19:56.515 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key59
+23:19:56.516 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key60
+23:19:56.518 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key61
+23:19:56.518 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key62
+23:19:56.519 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key63
+23:19:56.520 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key64
+23:19:56.521 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key65
+23:19:56.522 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key66
+23:19:56.523 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key67
+23:19:56.524 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key68
+23:19:56.525 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key69
+23:19:56.525 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key70
+23:19:56.526 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key71
+23:19:56.527 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key72
+23:19:56.528 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key73
+23:19:56.529 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key74
+23:19:56.531 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key75
+23:19:56.531 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key76
+23:19:56.533 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key77
+23:19:56.534 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key78
+23:19:56.535 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key79
+23:19:56.537 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key80
+23:19:56.537 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key81
+23:19:56.538 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key82
+23:19:56.539 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key83
+23:19:56.540 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key84
+23:19:56.541 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key85
+23:19:56.543 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key86
+23:19:56.544 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key87
+23:19:56.544 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key88
+23:19:56.545 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key89
+23:19:56.547 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key90
+23:19:56.548 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key91
+23:19:56.550 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key92
+23:19:56.551 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key93
+23:19:56.552 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key94
+23:19:56.553 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key95
+23:19:56.554 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key96
+23:19:56.555 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key97
+23:19:56.555 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key98
+23:19:56.557 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key99
+23:19:56.558 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key0
+23:19:56.559 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key2
+23:19:56.559 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key4
+23:19:56.560 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key6
+23:19:56.560 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key8
+23:19:56.562 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key10
+23:19:56.563 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key12
+23:19:56.564 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key14
+23:19:56.565 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key16
+23:19:56.565 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key18
+23:19:56.566 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key20
+23:19:56.568 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key22
+23:19:56.568 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key24
+23:19:56.569 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key26
+23:19:56.570 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key28
+23:19:56.571 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key30
+23:19:56.572 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key32
+23:19:56.573 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key34
+23:19:56.574 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key36
+23:19:56.575 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key38
+23:19:56.575 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key40
+23:19:56.577 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key42
+23:19:56.578 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key44
+23:19:56.578 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key46
+23:19:56.579 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key48
+23:19:56.580 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key50
+23:19:56.581 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key52
+23:19:56.582 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key54
+23:19:56.582 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key56
+23:19:56.583 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key58
+23:19:56.584 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key60
+23:19:56.585 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key62
+23:19:56.585 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key64
+23:19:56.587 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key66
+23:19:56.588 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key68
+23:19:56.589 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key70
+23:19:56.590 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key72
+23:19:56.590 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key74
+23:19:56.591 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key76
+23:19:56.591 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key78
+23:19:56.593 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key80
+23:19:56.594 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key82
+23:19:56.595 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key84
+23:19:56.596 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key86
+23:19:56.597 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key88
+23:19:56.598 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key90
+23:19:56.598 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key92
+23:19:56.600 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key94
+23:19:56.600 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key96
+23:19:56.601 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key98
+23:19:56.601 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit17979417280056975046\test-wal.log
+23:19:56.601 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.602 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit17979417280056975046\test-wal.log
+23:19:56.602 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.602 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.603 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 150 entries from WAL
+23:19:56.604 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 150 entries replayed out of 150
+23:19:56.604 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.604 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key0, found=false
+23:19:56.604 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=true
+23:19:56.604 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key2, found=false
+23:19:56.604 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key3, found=true
+23:19:56.604 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key4, found=false
+23:19:56.605 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key5, found=true
+23:19:56.605 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key6, found=false
+23:19:56.605 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key7, found=true
+23:19:56.605 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key8, found=false
+23:19:56.605 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key9, found=true
+23:19:56.605 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key10, found=false
+23:19:56.605 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key11, found=true
+23:19:56.605 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key12, found=false
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key13, found=true
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key14, found=false
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key15, found=true
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key16, found=false
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key17, found=true
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key18, found=false
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key19, found=true
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key20, found=false
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key21, found=true
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key22, found=false
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key23, found=true
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key24, found=false
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key25, found=true
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key26, found=false
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key27, found=true
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key28, found=false
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key29, found=true
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key30, found=false
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key31, found=true
+23:19:56.606 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key32, found=false
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key33, found=true
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key34, found=false
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key35, found=true
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key36, found=false
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key37, found=true
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key38, found=false
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key39, found=true
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key40, found=false
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key41, found=true
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key42, found=false
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key43, found=true
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key44, found=false
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key45, found=true
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key46, found=false
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key47, found=true
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key48, found=false
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key49, found=true
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key50, found=false
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key51, found=true
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key52, found=false
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key53, found=true
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key54, found=false
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key55, found=true
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key56, found=false
+23:19:56.607 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key57, found=true
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key58, found=false
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key59, found=true
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key60, found=false
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key61, found=true
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key62, found=false
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key63, found=true
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key64, found=false
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key65, found=true
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key66, found=false
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key67, found=true
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key68, found=false
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key69, found=true
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key70, found=false
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key71, found=true
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key72, found=false
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key73, found=true
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key74, found=false
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key75, found=true
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key76, found=false
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key77, found=true
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key78, found=false
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key79, found=true
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key80, found=false
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key81, found=true
+23:19:56.608 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key82, found=false
+23:19:56.609 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key83, found=true
+23:19:56.609 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key84, found=false
+23:19:56.609 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key85, found=true
+23:19:56.609 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key86, found=false
+23:19:56.609 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key87, found=true
+23:19:56.609 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key88, found=false
+23:19:56.609 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key89, found=true
+23:19:56.609 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key90, found=false
+23:19:56.609 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key91, found=true
+23:19:56.609 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key92, found=false
+23:19:56.609 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key93, found=true
+23:19:56.609 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key94, found=false
+23:19:56.609 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key95, found=true
+23:19:56.609 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key96, found=false
+23:19:56.609 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key97, found=true
+23:19:56.609 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key98, found=false
+23:19:56.609 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key99, found=true
+23:19:56.609 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit17979417280056975046\test-wal.log
+23:19:56.610 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.611 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit17979417280056975046\test-wal.log
+23:19:56.611 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.624 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit10281009260871864478\test-wal.log
+23:19:56.624 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.624 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.625 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 0 entries from WAL
+23:19:56.625 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - No entries to recover
+23:19:56.625 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.629 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key1
+23:19:56.631 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key1
+23:19:56.633 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key1
+23:19:56.634 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit10281009260871864478\test-wal.log
+23:19:56.634 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.634 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit10281009260871864478\test-wal.log
+23:19:56.634 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.634 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.635 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 3 entries from WAL
+23:19:56.635 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 3 entries replayed out of 3
+23:19:56.635 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.635 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=true
+23:19:56.635 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit10281009260871864478\test-wal.log
+23:19:56.635 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.635 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit10281009260871864478\test-wal.log
+23:19:56.635 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.640 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit16205790536762435261\test-wal.log
+23:19:56.642 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.642 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.642 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 0 entries from WAL
+23:19:56.642 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - No entries to recover
+23:19:56.642 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.643 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit16205790536762435261\test-wal.log
+23:19:56.643 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit16205790536762435261\test-wal.log
+23:19:56.643 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit16205790536762435261\test-wal.log
+23:19:56.643 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.647 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit6974133136060697602\test-wal.log
+23:19:56.648 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.648 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.648 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 0 entries from WAL
+23:19:56.648 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - No entries to recover
+23:19:56.649 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.651 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key1
+23:19:56.653 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key2
+23:19:56.655 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key3
+23:19:56.656 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit6974133136060697602\test-wal.log
+23:19:56.656 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.657 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit6974133136060697602\test-wal.log
+23:19:56.657 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.657 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.657 [main] WARN  com.kvds.wal.WriteAheadLogImpl - Skipping corrupted log entry at line 3: with
+java.lang.IllegalArgumentException: Invalid log entry format: with
+	at com.kvds.wal.LogEntry.deserialize(LogEntry.java:71)
+	at com.kvds.wal.WriteAheadLogImpl.readAll(WriteAheadLogImpl.java:97)
+	at com.kvds.recovery.RecoveryManagerImpl.recover(RecoveryManagerImpl.java:35)
+	at com.kvds.core.KeyValueStoreImpl.<init>(KeyValueStoreImpl.java:73)
+	at com.kvds.core.KeyValueStoreImpl.<init>(KeyValueStoreImpl.java:44)
+	at com.kvds.core.KeyValueStoreIntegrationTest.testRecoveryWithSpecialCharacters(KeyValueStoreIntegrationTest.java:286)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+23:19:56.662 [main] WARN  com.kvds.wal.WriteAheadLogImpl - Skipping corrupted log entry at line 4: newlines
+java.lang.IllegalArgumentException: Invalid log entry format: newlines
+	at com.kvds.wal.LogEntry.deserialize(LogEntry.java:71)
+	at com.kvds.wal.WriteAheadLogImpl.readAll(WriteAheadLogImpl.java:97)
+	at com.kvds.recovery.RecoveryManagerImpl.recover(RecoveryManagerImpl.java:35)
+	at com.kvds.core.KeyValueStoreImpl.<init>(KeyValueStoreImpl.java:73)
+	at com.kvds.core.KeyValueStoreImpl.<init>(KeyValueStoreImpl.java:44)
+	at com.kvds.core.KeyValueStoreIntegrationTest.testRecoveryWithSpecialCharacters(KeyValueStoreIntegrationTest.java:286)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+23:19:56.663 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 3 entries from WAL
+23:19:56.663 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 3 entries replayed out of 3
+23:19:56.663 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.663 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=true
+23:19:56.663 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key2, found=true
+23:19:56.669 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit6974133136060697602\test-wal.log
+23:19:56.669 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+mvn : Feb 01, 2026 11:19:56 PM org
+.junit.jupiter.engine.execution.Ju
+piterEngineExecutionContext close
+At line:1 char:93
++ ... \IntelliJ IDEA Community 
+Edition 2023.3.2\jbr"; mvn test 
+2>&1 | Out-F ...
++                                 
+                    ~~~~~~~~~~~~~
+    + CategoryInfo          : Not 
+   Specified: (Feb 01, 2026 11..  
+  .onContext close:String) [],    
+ RemoteException
+    + FullyQualifiedErrorId : Nat 
+   iveCommandError
+ 
+SEVERE: Caught exception while 
+closing extension context: org.jun
+it.jupiter.engine.descriptor.Metho
+dExtensionContext@7f92b990
+java.io.IOException: Failed to 
+delete temp directory C:\Users\pra
+tt\AppData\Local\Temp\junit6974133
+136060697602. The following paths 
+could not be deleted (see 
+suppressed exceptions for 
+details): <root>, test-wal.log
+	at org.junit.jupiter.engine.exten
+sion.TempDirectory$CloseablePath.c
+reateIOExceptionWithAttachedFailur
+es(TempDirectory.java:431)
+	at org.junit.jupiter.engine.exten
+sion.TempDirectory$CloseablePath.c
+lose(TempDirectory.java:312)
+	at org.junit.jupiter.engine.descr
+iptor.AbstractExtensionContext.lam
+bda$static$0(AbstractExtensionCont
+ext.java:45)
+	at org.junit.platform.engine.supp
+ort.store.NamespacedHierarchicalSt
+ore$EvaluatedValue.close(Namespace
+dHierarchicalStore.java:333)
+	at org.junit.platform.engine.supp
+ort.store.NamespacedHierarchicalSt
+ore$EvaluatedValue.access$800(Name
+spacedHierarchicalStore.java:317)
+	at org.junit.platform.engine.supp
+ort.store.NamespacedHierarchicalSt
+ore.lambda$close$3(NamespacedHiera
+rchicalStore.java:98)
+	at org.junit.platform.engine.supp
+ort.hierarchical.ThrowableCollecto
+r.execute(ThrowableCollector.java:
+73)
+	at org.junit.platform.engine.supp
+ort.store.NamespacedHierarchicalSt
+ore.lambda$close$4(NamespacedHiera
+rchicalStore.java:98)
+	at java.base/java.util.stream.For
+EachOps$ForEachOp$OfRef.accept(For
+EachOps.java:183)
+	at java.base/java.util.ArrayList.
+forEach(ArrayList.java:1511)
+	at java.base/java.util.stream.Sor
+tedOps$RefSortingSink.end(SortedOp
+s.java:395)
+	at java.base/java.util.stream.Sin
+k$ChainedReference.end(Sink.java:2
+58)
+	at java.base/java.util.stream.Sin
+k$ChainedReference.end(Sink.java:2
+58)
+	at java.base/java.util.stream.Abs
+tractPipeline.copyInto(AbstractPip
+eline.java:510)
+	at java.base/java.util.stream.Abs
+tractPipeline.wrapAndCopyInto(Abst
+ractPipeline.java:499)
+	at java.base/java.util.stream.For
+EachOps$ForEachOp.evaluateSequenti
+al(ForEachOps.java:150)
+	at java.base/java.util.stream.For
+EachOps$ForEachOp$OfRef.evaluateSe
+quential(ForEachOps.java:173)
+	at java.base/java.util.stream.Abs
+tractPipeline.evaluate(AbstractPip
+eline.java:234)
+	at java.base/java.util.stream.Ref
+erencePipeline.forEach(ReferencePi
+peline.java:596)
+	at org.junit.platform.engine.supp
+ort.store.NamespacedHierarchicalSt
+ore.close(NamespacedHierarchicalSt
+ore.java:98)
+	at org.junit.jupiter.engine.descr
+iptor.AbstractExtensionContext.clo
+se(AbstractExtensionContext.java:8
+7)
+	at org.junit.jupiter.engine.execu
+tion.JupiterEngineExecutionContext
+.close(JupiterEngineExecutionConte
+xt.java:53)
+	at org.junit.jupiter.engine.descr
+iptor.JupiterTestDescriptor.cleanU
+p(JupiterTestDescriptor.java:224)
+	at org.junit.jupiter.engine.descr
+iptor.TestMethodTestDescriptor.lam
+bda$cleanUp$1(TestMethodTestDescri
+ptor.java:156)
+	at org.junit.platform.engine.supp
+ort.hierarchical.ThrowableCollecto
+r.execute(ThrowableCollector.java:
+73)
+	at org.junit.jupiter.engine.descr
+iptor.TestMethodTestDescriptor.cle
+anUp(TestMethodTestDescriptor.java
+:156)
+	at org.junit.jupiter.engine.descr
+iptor.TestMethodTestDescriptor.cle
+anUp(TestMethodTestDescriptor.java
+:69)
+	at org.junit.platform.engine.supp
+ort.hierarchical.NodeTestTask.lamb
+da$cleanUp$10(NodeTestTask.java:16
+7)
+	at org.junit.platform.engine.supp
+ort.hierarchical.ThrowableCollecto
+r.execute(ThrowableCollector.java:
+73)
+	at org.junit.platform.engine.supp
+ort.hierarchical.NodeTestTask.clea
+nUp(NodeTestTask.java:167)
+	at org.junit.platform.engine.supp
+ort.hierarchical.NodeTestTask.exec
+ute(NodeTestTask.java:98)
+	at java.base/java.util.ArrayList.
+forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.supp
+ort.hierarchical.SameThreadHierarc
+hicalTestExecutorService.invokeAll
+(SameThreadHierarchicalTestExecuto
+rService.java:41)
+	at org.junit.platform.engine.supp
+ort.hierarchical.NodeTestTask.lamb
+da$executeRecursively$6(NodeTestTa
+sk.java:155)
+	at org.junit.platform.engine.supp
+ort.hierarchical.ThrowableCollecto
+r.execute(ThrowableCollector.java:
+73)
+	at org.junit.platform.engine.supp
+ort.hierarchical.NodeTestTask.lamb
+da$executeRecursively$8(NodeTestTa
+sk.java:141)
+	at org.junit.platform.engine.supp
+ort.hierarchical.Node.around(Node.
+java:137)
+	at org.junit.platform.engine.supp
+ort.hierarchical.NodeTestTask.lamb
+da$executeRecursively$9(NodeTestTa
+sk.java:139)
+	at org.junit.platform.engine.supp
+ort.hierarchical.ThrowableCollecto
+r.execute(ThrowableCollector.java:
+73)
+	at org.junit.platform.engine.supp
+ort.hierarchical.NodeTestTask.exec
+uteRecursively(NodeTestTask.java:1
+38)
+	at org.junit.platform.engine.supp
+ort.hierarchical.NodeTestTask.exec
+ute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.
+forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.supp
+ort.hierarchical.SameThreadHierarc
+hicalTestExecutorService.invokeAll
+(SameThreadHierarchicalTestExecuto
+rService.java:41)
+	at org.junit.platform.engine.supp
+ort.hierarchical.NodeTestTask.lamb
+da$executeRecursively$6(NodeTestTa
+sk.java:155)
+	at org.junit.platform.engine.supp
+ort.hierarchical.ThrowableCollecto
+r.execute(ThrowableCollector.java:
+73)
+	at org.junit.platform.engine.supp
+ort.hierarchical.NodeTestTask.lamb
+da$executeRecursively$8(NodeTestTa
+sk.java:141)
+	at org.junit.platform.engine.supp
+ort.hierarchical.Node.around(Node.
+java:137)
+	at org.junit.platform.engine.supp
+ort.hierarchical.NodeTestTask.lamb
+da$executeRecursively$9(NodeTestTa
+sk.java:139)
+	at org.junit.platform.engine.supp
+ort.hierarchical.ThrowableCollecto
+r.execute(ThrowableCollector.java:
+73)
+	at org.junit.platform.engine.supp
+ort.hierarchical.NodeTestTask.exec
+uteRecursively(NodeTestTask.java:1
+38)
+	at org.junit.platform.engine.supp
+ort.hierarchical.NodeTestTask.exec
+ute(NodeTestTask.java:95)
+	at org.junit.platform.engine.supp
+ort.hierarchical.SameThreadHierarc
+hicalTestExecutorService.submit(Sa
+meThreadHierarchicalTestExecutorSe
+rvice.java:35)
+	at org.junit.platform.engine.supp
+ort.hierarchical.HierarchicalTestE
+xecutor.execute(HierarchicalTestEx
+ecutor.java:57)
+	at org.junit.platform.engine.supp
+ort.hierarchical.HierarchicalTestE
+ngine.execute(HierarchicalTestEngi
+ne.java:54)
+	at org.junit.platform.launcher.co
+re.EngineExecutionOrchestrator.exe
+cute(EngineExecutionOrchestrator.j
+ava:198)
+	at org.junit.platform.launcher.co
+re.EngineExecutionOrchestrator.exe
+cute(EngineExecutionOrchestrator.j
+ava:169)
+	at org.junit.platform.launcher.co
+re.EngineExecutionOrchestrator.exe
+cute(EngineExecutionOrchestrator.j
+ava:93)
+	at org.junit.platform.launcher.co
+re.EngineExecutionOrchestrator.lam
+bda$execute$0(EngineExecutionOrche
+strator.java:58)
+23:19:56.691 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit9433035598371700500\test-wal.log
+	at org.junit.platform.launcher.co
+re.EngineExecutionOrchestrator.wit
+hInterceptedStreams(EngineExecutio
+nOrchestrator.java:141)
+	at org.junit.platform.launcher.co
+re.EngineExecutionOrchestrator.exe
+cute(EngineExecutionOrchestrator.j
+ava:57)
+	at org.junit.platform.launcher.co
+re.DefaultLauncher.execute(Default
+Launcher.java:103)
+	at org.junit.platform.launcher.co
+re.DefaultLauncher.execute(Default
+Launcher.java:85)
+	at org.junit.platform.launcher.co
+re.DelegatingLauncher.execute(Dele
+gatingLauncher.java:47)
+	at org.apache.maven.surefire.juni
+tplatform.LazyLauncher.execute(Laz
+yLauncher.java:56)
+	at org.apache.maven.surefire.juni
+tplatform.JUnitPlatformProvider.ex
+ecute(JUnitPlatformProvider.java:1
+84)
+	at org.apache.maven.surefire.juni
+tplatform.JUnitPlatformProvider.in
+vokeAllTests(JUnitPlatformProvider
+.java:148)
+	at org.apache.maven.surefire.juni
+tplatform.JUnitPlatformProvider.in
+voke(JUnitPlatformProvider.java:12
+2)
+	at org.apache.maven.surefire.boot
+er.ForkedBooter.runSuitesInProcess
+(ForkedBooter.java:385)
+	at org.apache.maven.surefire.boot
+er.ForkedBooter.execute(ForkedBoot
+er.java:162)
+	at org.apache.maven.surefire.boot
+er.ForkedBooter.run(ForkedBooter.j
+ava:507)
+	at org.apache.maven.surefire.boot
+er.ForkedBooter.main(ForkedBooter.
+java:495)
+	Suppressed: java.nio.file.Directo
+ryNotEmptyException: C:\Users\prat
+t\AppData\Local\Temp\junit69741331
+36060697602
+		at java.base/sun.nio.fs.WindowsF
+ileSystemProvider.implDelete(Windo
+wsFileSystemProvider.java:272)
+		at java.base/sun.nio.fs.Abstract
+FileSystemProvider.delete(Abstract
+FileSystemProvider.java:105)
+		at java.base/java.nio.file.Files
+.delete(Files.java:1152)
+		at org.junit.jupiter.engine.exte
+nsion.TempDirectory$CloseablePath$
+1.deleteAndContinue(TempDirectory.
+java:358)
+		at org.junit.jupiter.engine.exte
+nsion.TempDirectory$CloseablePath$
+1.postVisitDirectory(TempDirectory
+.java:353)
+		at org.junit.jupiter.engine.exte
+nsion.TempDirectory$CloseablePath$
+1.postVisitDirectory(TempDirectory
+.java:329)
+		at java.base/java.nio.file.Files
+.walkFileTree(Files.java:2828)
+		at java.base/java.nio.file.Files
+.walkFileTree(Files.java:2882)
+		at org.junit.jupiter.engine.exte
+nsion.TempDirectory$CloseablePath.
+deleteAllFilesAndDirectories(TempD
+irectory.java:329)
+23:19:56.693 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.693 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.693 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 0 entries from WAL
+23:19:56.693 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - No entries to recover
+23:19:56.693 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.694 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit9433035598371700500\test-wal.log
+23:19:56.694 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+		at org.junit.jupiter.engine.exte
+nsion.TempDirectory$CloseablePath.
+close(TempDirectory.java:310)
+		... 69 more
+	Suppressed: java.nio.file.FileSys
+temException: C:\Users\pratt\AppDa
+ta\Local\Temp\junit697413313606069
+7602\test-wal.log: The process 
+cannot access the file because it 
+is being used by another process
+		at java.base/sun.nio.fs.WindowsE
+xception.translateToIOException(Wi
+ndowsException.java:92)
+		at java.base/sun.nio.fs.WindowsE
+xception.rethrowAsIOException(Wind
+owsException.java:103)
+		at java.base/sun.nio.fs.WindowsE
+xception.rethrowAsIOException(Wind
+owsException.java:108)
+		at java.base/sun.nio.fs.WindowsF
+ileSystemProvider.implDelete(Windo
+wsFileSystemProvider.java:275)
+		at java.base/sun.nio.fs.Abstract
+FileSystemProvider.delete(Abstract
+FileSystemProvider.java:105)
+		at java.base/java.nio.file.Files
+.delete(Files.java:1152)
+		at org.junit.jupiter.engine.exte
+nsion.TempDirectory$CloseablePath$
+1.deleteAndContinue(TempDirectory.
+java:358)
+		at org.junit.jupiter.engine.exte
+nsion.TempDirectory$CloseablePath$
+1.visitFile(TempDirectory.java:348
+)
+		at org.junit.jupiter.engine.exte
+nsion.TempDirectory$CloseablePath$
+1.visitFile(TempDirectory.java:329
+)
+		at java.base/java.nio.file.Files
+.walkFileTree(Files.java:2811)
+		at java.base/java.nio.file.Files
+.walkFileTree(Files.java:2882)
+		at org.junit.jupiter.engine.exte
+nsion.TempDirectory$CloseablePath.
+deleteAllFilesAndDirectories(TempD
+irectory.java:329)
+		at org.junit.jupiter.engine.exte
+nsion.TempDirectory$CloseablePath.
+close(TempDirectory.java:310)
+		... 69 more
+		Suppressed: java.nio.file.FileSy
+stemException: C:\Users\pratt\AppD
+ata\Local\Temp\junit69741331360606
+97602\test-wal.log: The process 
+cannot access the file because it 
+is being used by another process
+			at java.base/sun.nio.fs.Windows
+Exception.translateToIOException(W
+indowsException.java:92)
+			at java.base/sun.nio.fs.Windows
+Exception.rethrowAsIOException(Win
+dowsException.java:103)
+			at java.base/sun.nio.fs.Windows
+Exception.rethrowAsIOException(Win
+dowsException.java:108)
+			at java.base/sun.nio.fs.Windows
+FileSystemProvider.implDelete(Wind
+owsFileSystemProvider.java:275)
+			at java.base/sun.nio.fs.Abstrac
+tFileSystemProvider.delete(Abstrac
+tFileSystemProvider.java:105)
+			at java.base/java.nio.file.File
+s.delete(Files.java:1152)
+			at org.junit.jupiter.engine.ext
+ension.TempDirectory$CloseablePath
+$1.resetPermissionsAndTryToDeleteA
+gain(TempDirectory.java:382)
+			at org.junit.jupiter.engine.ext
+ension.TempDirectory$CloseablePath
+$1.deleteAndContinue(TempDirectory
+.java:368)
+			... 75 more
+
+23:19:56.700 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit7158398969782586506\test-wal.log
+23:19:56.700 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.700 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.701 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 0 entries from WAL
+23:19:56.701 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - No entries to recover
+23:19:56.701 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.703 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key1
+23:19:56.706 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key2
+23:19:56.708 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key3
+23:19:56.708 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=true
+23:19:56.708 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key2, found=true
+23:19:56.708 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key3, found=true
+23:19:56.708 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit7158398969782586506\test-wal.log
+23:19:56.708 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.709 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit7158398969782586506\test-wal.log
+23:19:56.709 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.709 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.710 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 3 entries from WAL
+23:19:56.710 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 3 entries replayed out of 3
+23:19:56.710 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.710 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=true
+23:19:56.710 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key2, found=true
+23:19:56.710 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key3, found=true
+23:19:56.710 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit7158398969782586506\test-wal.log
+23:19:56.710 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.710 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit7158398969782586506\test-wal.log
+23:19:56.711 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.716 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit1203979907382539407\test-wal.log
+23:19:56.716 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.716 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.716 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 0 entries from WAL
+23:19:56.716 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - No entries to recover
+23:19:56.716 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.721 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key1
+23:19:56.721 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit1203979907382539407\test-wal.log
+23:19:56.721 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.722 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit1203979907382539407\test-wal.log
+23:19:56.722 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.722 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.723 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 1 entries from WAL
+23:19:56.723 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 1 entries replayed out of 1
+23:19:56.723 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.723 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=true
+23:19:56.725 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key2
+23:19:56.725 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit1203979907382539407\test-wal.log
+23:19:56.725 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.725 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit1203979907382539407\test-wal.log
+23:19:56.726 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.726 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.726 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 2 entries from WAL
+23:19:56.726 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 2 entries replayed out of 2
+23:19:56.726 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.726 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=true
+23:19:56.726 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key2, found=true
+23:19:56.729 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key3
+23:19:56.729 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit1203979907382539407\test-wal.log
+23:19:56.729 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.731 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit1203979907382539407\test-wal.log
+23:19:56.731 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.731 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.731 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 3 entries from WAL
+23:19:56.731 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 3 entries replayed out of 3
+23:19:56.731 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.731 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=true
+23:19:56.733 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key2, found=true
+23:19:56.733 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key3, found=true
+23:19:56.733 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit1203979907382539407\test-wal.log
+23:19:56.733 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.733 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit1203979907382539407\test-wal.log
+23:19:56.733 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.738 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit16227081814199963674\test-wal.log
+23:19:56.739 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.739 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.739 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 0 entries from WAL
+23:19:56.739 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - No entries to recover
+23:19:56.739 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.741 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key1
+23:19:56.744 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key2
+23:19:56.746 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key3
+23:19:56.748 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key2
+23:19:56.750 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key4
+23:19:56.750 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit16227081814199963674\test-wal.log
+23:19:56.750 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.750 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit16227081814199963674\test-wal.log
+23:19:56.750 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.750 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.751 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 5 entries from WAL
+23:19:56.751 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 5 entries replayed out of 5
+23:19:56.751 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.752 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=true
+23:19:56.752 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key2, found=false
+23:19:56.752 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key3, found=true
+23:19:56.752 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key4, found=true
+23:19:56.752 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit16227081814199963674\test-wal.log
+23:19:56.752 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.753 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit16227081814199963674\test-wal.log
+23:19:56.753 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.759 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit17666102818694958119\test-wal.log
+23:19:56.759 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.759 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.759 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 0 entries from WAL
+23:19:56.760 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - No entries to recover
+23:19:56.760 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.762 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key1
+23:19:56.765 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key1
+23:19:56.766 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key1
+23:19:56.768 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit17666102818694958119\test-wal.log
+23:19:56.768 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.769 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit17666102818694958119\test-wal.log
+23:19:56.769 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.769 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.770 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 3 entries from WAL
+23:19:56.770 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 3 entries replayed out of 3
+23:19:56.770 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.770 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=true
+23:19:56.770 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit17666102818694958119\test-wal.log
+23:19:56.770 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.770 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit17666102818694958119\test-wal.log
+23:19:56.770 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.776 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit3688321809543536212\test-wal.log
+23:19:56.776 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.776 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.776 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 0 entries from WAL
+23:19:56.776 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - No entries to recover
+23:19:56.776 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.777 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit3688321809543536212\test-wal.log
+23:19:56.777 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.777 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit3688321809543536212\test-wal.log
+23:19:56.777 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.777 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.778 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 0 entries from WAL
+23:19:56.778 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - No entries to recover
+23:19:56.778 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.778 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=false
+23:19:56.778 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit3688321809543536212\test-wal.log
+23:19:56.778 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.779 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit3688321809543536212\test-wal.log
+23:19:56.779 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.784 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit11786453220540010015\test-wal.log
+23:19:56.784 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.784 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.784 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 0 entries from WAL
+23:19:56.784 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - No entries to recover
+23:19:56.784 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.787 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key1
+23:19:56.789 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key2
+23:19:56.790 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit11786453220540010015\test-wal.log
+23:19:56.790 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.790 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit11786453220540010015\test-wal.log
+23:19:56.790 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.790 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.791 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 2 entries from WAL
+23:19:56.792 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 2 entries replayed out of 2
+23:19:56.792 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.792 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=true
+23:19:56.792 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key2, found=true
+23:19:56.793 [main] DEBUG com.kvds.core.KeyValueStoreImpl - PUT successful: key=key3
+23:19:56.796 [main] DEBUG com.kvds.core.KeyValueStoreImpl - DELETE successful: key=key1
+23:19:56.797 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=false
+23:19:56.797 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key2, found=true
+23:19:56.797 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key3, found=true
+23:19:56.797 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit11786453220540010015\test-wal.log
+23:19:56.797 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.797 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit11786453220540010015\test-wal.log
+23:19:56.798 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:56.798 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:56.799 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 4 entries from WAL
+23:19:56.799 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 4 entries replayed out of 4
+23:19:56.799 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore initialized with WAL and recovery complete
+23:19:56.799 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key1, found=false
+23:19:56.799 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key2, found=true
+23:19:56.799 [main] DEBUG com.kvds.core.KeyValueStoreImpl - GET: key=key3, found=true
+23:19:56.799 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit11786453220540010015\test-wal.log
+23:19:56.799 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+23:19:56.799 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit11786453220540010015\test-wal.log
+23:19:56.799 [main] INFO  com.kvds.core.KeyValueStoreImpl - KeyValueStore closed
+[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.490 s <<< FAILURE! -- in com.kvds.core.KeyValueStoreIntegrationTest
+[ERROR] com.kvds.core.KeyValueStoreIntegrationTest.testRecoveryWithSpecialCharacters -- Time elapsed: 0.040 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+expected: <value
+with
+newlines> but was: <value>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at com.kvds.core.KeyValueStoreIntegrationTest.testRecoveryWithSpecialCharacters(KeyValueStoreIntegrationTest.java:290)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	Suppressed: java.io.IOException: Failed to delete temp directory C:\Users\pratt\AppData\Local\Temp\junit6974133136060697602. The following paths could not be deleted (see suppressed exceptions for details): <root>, test-wal.log
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+		at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
+		at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+		at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+		... 2 more
+		Suppressed: java.nio.file.DirectoryNotEmptyException: C:\Users\pratt\AppData\Local\Temp\junit6974133136060697602
+			at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:272)
+			at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+			at java.base/java.nio.file.Files.delete(Files.java:1152)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2828)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2882)
+			... 13 more
+		Suppressed: java.nio.file.FileSystemException: C:\Users\pratt\AppData\Local\Temp\junit6974133136060697602\test-wal.log: The process cannot access the file because it is being used by another process
+			at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+			at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:275)
+			at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+			at java.base/java.nio.file.Files.delete(Files.java:1152)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2811)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2882)
+			... 13 more
+			Suppressed: java.nio.file.FileSystemException: C:\Users\pratt\AppData\Local\Temp\junit6974133136060697602\test-wal.log: The process cannot access the file because it is being used by another process
+				... 21 more
+
+[INFO] Running com.kvds.recovery.RecoveryManagerImplTest
+23:19:56.804 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.679 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:58.686 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 4 entries replayed out of 4
+23:19:58.690 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.691 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:58.691 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 1 entries replayed out of 1
+23:19:58.694 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.695 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:58.695 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 2 entries replayed out of 2
+23:19:58.698 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.700 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:58.701 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 1 entries replayed out of 1
+23:19:58.705 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.712 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.778 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:58.781 [main] WARN  c.kvds.recovery.RecoveryManagerImpl - Failed to replay log entry: LogEntry{timestamp=1769968198761, operation=PUT, key='key2', value='value2'}
+java.lang.RuntimeException: Storage error
+	at com.kvds.recovery.RecoveryManagerImpl.replayLogEntry(RecoveryManagerImpl.java:70)
+	at com.kvds.recovery.RecoveryManagerImpl.recover(RecoveryManagerImpl.java:45)
+	at com.kvds.recovery.RecoveryManagerImplTest.testRecoverContinuesOnEntryError(RecoveryManagerImplTest.java:175)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+23:19:58.784 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 2 entries replayed out of 3
+23:19:58.807 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.809 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:58.810 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 3 entries replayed out of 3
+23:19:58.814 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.815 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:58.816 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 1 entries replayed out of 1
+23:19:58.818 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.819 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:58.820 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 1 entries replayed out of 1
+23:19:58.822 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.825 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.830 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:58.832 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 1000 entries replayed out of 1000
+23:19:58.837 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.838 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:58.839 [main] ERROR c.kvds.recovery.RecoveryManagerImpl - Recovery failed
+java.lang.RuntimeException: WAL read error
+	at com.kvds.recovery.RecoveryManagerImpl.recover(RecoveryManagerImpl.java:35)
+	at com.kvds.recovery.RecoveryManagerImplTest.lambda$testRecoverWithWALReadException$2(RecoveryManagerImplTest.java:154)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.kvds.recovery.RecoveryManagerImplTest.testRecoverWithWALReadException(RecoveryManagerImplTest.java:153)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+23:19:58.843 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.845 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:58.846 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 3 entries replayed out of 3
+23:19:58.852 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.853 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:58.853 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - No entries to recover
+23:19:58.858 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.859 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Starting recovery from WAL
+23:19:58.859 [main] INFO  c.kvds.recovery.RecoveryManagerImpl - Recovery complete: 2 entries replayed out of 2
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.056 s -- in com.kvds.recovery.RecoveryManagerImplTest
+[INFO] Running com.kvds.storage.InMemoryStorageTest
+23:19:58.868 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.881 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.884 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.888 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.888 [main] DEBUG com.kvds.storage.InMemoryStorage - Storage cleared
+23:19:58.890 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.891 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.900 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.904 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.917 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.920 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.923 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.925 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.929 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.933 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:19:58.935 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 s -- in com.kvds.storage.InMemoryStorageTest
+[INFO] Running com.kvds.wal.LogEntryTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s -- in com.kvds.wal.LogEntryTest
+[INFO] Running com.kvds.wal.WriteAheadLogImplTest
+23:19:58.993 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit6358959533010453953\test-wal.log
+23:19:59.024 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 1 entries from WAL
+23:19:59.025 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit6358959533010453953\test-wal.log
+23:19:59.031 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit10928198030337611031\test-wal.log
+23:19:59.141 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 50 entries from WAL
+23:19:59.142 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit10928198030337611031\test-wal.log
+23:19:59.150 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit9019412845679767488\test-wal.log
+23:19:59.169 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 1 entries from WAL
+23:19:59.173 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit9019412845679767488\test-wal.log
+23:19:59.179 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit1494366502505707496\test-wal.log
+23:19:59.197 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 1 entries from WAL
+23:19:59.199 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit1494366502505707496\test-wal.log
+23:19:59.208 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit6537994798046275122\test-wal.log
+23:19:59.212 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL cleared: C:\Users\pratt\AppData\Local\Temp\junit6537994798046275122\test-wal.log
+23:19:59.213 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit6537994798046275122\test-wal.log
+23:19:59.217 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit10956312469932891384\test-wal.log
+23:19:59.220 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit10956312469932891384\nested\dir\wal.log
+23:19:59.221 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit10956312469932891384\nested\dir\wal.log
+23:19:59.221 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit10956312469932891384\test-wal.log
+23:19:59.229 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit12147112388774215975\test-wal.log
+23:19:59.251 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 1 entries from WAL
+23:19:59.251 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit12147112388774215975\test-wal.log
+23:19:59.257 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit13133323039800286247\test-wal.log
+23:19:59.258 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 0 entries from WAL
+23:19:59.258 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit13133323039800286247\test-wal.log
+23:19:59.269 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit8872882298343812551\test-wal.log
+23:19:59.272 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit8872882298343812551\test-wal.log
+23:19:59.278 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit8872882298343812551\test-wal.log
+23:19:59.299 [main] WARN  com.kvds.wal.WriteAheadLogImpl - Skipping corrupted log entry at line 2: corrupted|entry
+java.lang.IllegalArgumentException: Invalid log entry format: corrupted|entry
+	at com.kvds.wal.LogEntry.deserialize(LogEntry.java:71)
+	at com.kvds.wal.WriteAheadLogImpl.readAll(WriteAheadLogImpl.java:97)
+	at com.kvds.wal.WriteAheadLogImplTest.testCorruptedEntries(WriteAheadLogImplTest.java:178)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+23:19:59.300 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 2 entries from WAL
+23:19:59.300 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit8872882298343812551\test-wal.log
+23:19:59.301 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit8872882298343812551\test-wal.log
+23:19:59.311 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit207806833847705624\test-wal.log
+23:19:59.313 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit207806833847705624\test-wal.log
+23:19:59.320 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit5109335511291434523\test-wal.log
+23:19:59.321 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit5109335511291434523\test-wal.log
+23:19:59.328 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit14436858184547583838\test-wal.log
+23:19:59.333 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit14436858184547583838\test-wal.log
+23:19:59.335 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit14436858184547583838\test-wal.log
+23:19:59.350 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 2 entries from WAL
+23:19:59.350 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit14436858184547583838\test-wal.log
+23:19:59.351 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit14436858184547583838\test-wal.log
+23:19:59.355 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WriteAheadLog initialized: C:\Users\pratt\AppData\Local\Temp\junit18385569463606921228\test-wal.log
+23:19:59.375 [main] DEBUG com.kvds.wal.WriteAheadLogImpl - Read 3 entries from WAL
+23:19:59.375 [main] INFO  com.kvds.wal.WriteAheadLogImpl - WAL closed: C:\Users\pratt\AppData\Local\Temp\junit18385569463606921228\test-wal.log
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.389 s -- in com.kvds.wal.WriteAheadLogImplTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   KeyValueStoreIntegrationTest.testRecoveryWithSpecialCharacters:290 expected: <value
+with
+newlines> but was: <value>
+[INFO] 
+[ERROR] Tests run: 91, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.863 s
+[INFO] Finished at: 2026-02-01T23:19:59+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.2.2:test (default-test) on project kv-datastore: There are test failures.
+[ERROR] 
+[ERROR] Please refer to C:\Users\pratt\source\repos\KV-DS\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

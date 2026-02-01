@@ -1,0 +1,8 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Key-Value Data Store,com.kvds.recovery,RecoveryManagerImpl,5,111,1,11,1,33,1,9,0,4
+Key-Value Data Store,com.kvds.core,KeyValueStoreImpl,77,211,1,33,19,66,1,27,0,11
+Key-Value Data Store,com.kvds.exception,KVDSException,4,5,0,0,2,2,1,1,1,1
+Key-Value Data Store,com.kvds.wal,WriteAheadLogImpl,65,177,4,8,18,48,4,8,0,6
+Key-Value Data Store,com.kvds.wal,LogEntry,4,208,6,18,0,36,6,17,0,11
+Key-Value Data Store,com.kvds.wal,Operation,0,15,0,0,0,3,0,1,0,1
+Key-Value Data Store,com.kvds.storage,InMemoryStorage,0,91,0,10,0,29,0,13,0,8

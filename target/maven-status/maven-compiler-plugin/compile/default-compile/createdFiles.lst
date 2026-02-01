@@ -1,0 +1,11 @@
+com\kvds\recovery\RecoveryManager.class
+com\kvds\exception\KVDSException.class
+com\kvds\wal\WriteAheadLogImpl.class
+com\kvds\core\KeyValueStoreImpl.class
+com\kvds\storage\Storage.class
+com\kvds\wal\LogEntry.class
+com\kvds\recovery\RecoveryManagerImpl.class
+com\kvds\wal\WriteAheadLog.class
+com\kvds\core\KeyValueStore.class
+com\kvds\storage\InMemoryStorage.class
+com\kvds\wal\Operation.class

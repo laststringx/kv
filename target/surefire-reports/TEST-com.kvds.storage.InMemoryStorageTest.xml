@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.kvds.storage.InMemoryStorageTest" time="0.075" tests="15" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\pratt\source\repos\KV-DS\target\test-classes;C:\Users\pratt\source\repos\KV-DS\target\classes;C:\Users\pratt\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\pratt\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\pratt\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\pratt\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\pratt\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\pratt\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\pratt\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\pratt\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\pratt\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\pratt\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\pratt\.m2\repository\org\mockito\mockito-core\5.8.0\mockito-core-5.8.0.jar;C:\Users\pratt\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;C:\Users\pratt\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar;C:\Users\pratt\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\pratt\.m2\repository\org\mockito\mockito-junit-jupiter\5.8.0\mockito-junit-jupiter-5.8.0.jar;"/>
+    <property name="java.vm.vendor" value="JetBrains s.r.o."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\jbr\bin"/>
+    <property name="sun.java.command" value="C:\Users\pratt\AppData\Local\Temp\surefire14597656211987637996\surefirebooter-20260201232108795_3.jar C:\Users\pratt\AppData\Local\Temp\surefire14597656211987637996 2026-02-01T23-21-08_623-jvmRun1 surefire-20260201232108795_1tmp surefire_0-20260201232108795_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\pratt\source\repos\KV-DS\target\test-classes;C:\Users\pratt\source\repos\KV-DS\target\classes;C:\Users\pratt\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\pratt\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\pratt\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\pratt\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\pratt\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\pratt\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\pratt\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\pratt\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\pratt\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\pratt\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\pratt\.m2\repository\org\mockito\mockito-core\5.8.0\mockito-core-5.8.0.jar;C:\Users\pratt\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;C:\Users\pratt\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar;C:\Users\pratt\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\pratt\.m2\repository\org\mockito\mockito-junit-jupiter\5.8.0\mockito-junit-jupiter-5.8.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\pratt"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\jbr"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\pratt\source\repos\KV-DS"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="jbr.virtualization.information" value="Hyper-V role"/>
+    <property name="surefire.real.class.path" value="C:\Users\pratt\AppData\Local\Temp\surefire14597656211987637996\surefirebooter-20260201232108795_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.10+1-b1087.23"/>
+    <property name="user.name" value="pratt"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="JBR-17.0.10+1-1087.23-jcef"/>
+    <property name="localRepository" value="C:\Users\pratt\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\pratt\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.10"/>
+    <property name="user.dir" value="C:\Users\pratt\source\repos\KV-DS"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\jbr\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\jbr\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.16.8-hotspot\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\System32;C:\Program Files\cursor\resources\app\bin;C:\Program Files\nodejs\;C:\Users\pratt\AppData\Local\Programs\Python\Launcher\;C:\Users\pratt\AppData\Local\Microsoft\WindowsApps;C:\Users\pratt\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\pratt\AppData\Local\Microsoft\WindowsApps;;C:\Users\pratt\AppData\Local\Programs\Ollama;C:\Users\pratt\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\pratt\.dotnet\tools;C:\Users\pratt\AppData\Roaming\npm;C:\Users\pratt\AppData\Local\Programs\Antigravity\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="JetBrains s.r.o."/>
+    <property name="java.vm.version" value="17.0.10+1-b1087.23"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testConcurrentReadsAndWrites" classname="com.kvds.storage.InMemoryStorageTest" time="0.019">
+    <system-out><![CDATA[23:21:13.423 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+]]></system-out>
+  </testcase>
+  <testcase name="testGetNullKey" classname="com.kvds.storage.InMemoryStorageTest" time="0.002">
+    <system-out><![CDATA[23:21:13.444 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateExistingKey" classname="com.kvds.storage.InMemoryStorageTest" time="0.001">
+    <system-out><![CDATA[23:21:13.447 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+]]></system-out>
+  </testcase>
+  <testcase name="testClear" classname="com.kvds.storage.InMemoryStorageTest" time="0.002">
+    <system-out><![CDATA[23:21:13.451 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+23:21:13.452 [main] DEBUG com.kvds.storage.InMemoryStorage - Storage cleared
+]]></system-out>
+  </testcase>
+  <testcase name="testSize" classname="com.kvds.storage.InMemoryStorageTest" time="0.001">
+    <system-out><![CDATA[23:21:13.454 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+]]></system-out>
+  </testcase>
+  <testcase name="testContainsKeyNull" classname="com.kvds.storage.InMemoryStorageTest" time="0.004">
+    <system-out><![CDATA[23:21:13.455 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+]]></system-out>
+  </testcase>
+  <testcase name="testContainsKey" classname="com.kvds.storage.InMemoryStorageTest" time="0.002">
+    <system-out><![CDATA[23:21:13.459 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+]]></system-out>
+  </testcase>
+  <testcase name="testConcurrentPuts" classname="com.kvds.storage.InMemoryStorageTest" time="0.012">
+    <system-out><![CDATA[23:21:13.462 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+]]></system-out>
+  </testcase>
+  <testcase name="testPutAndGet" classname="com.kvds.storage.InMemoryStorageTest" time="0.001">
+    <system-out><![CDATA[23:21:13.476 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteNullKey" classname="com.kvds.storage.InMemoryStorageTest" time="0.002">
+    <system-out><![CDATA[23:21:13.479 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+]]></system-out>
+  </testcase>
+  <testcase name="testGetNonExistentKey" classname="com.kvds.storage.InMemoryStorageTest" time="0.002">
+    <system-out><![CDATA[23:21:13.482 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteNonExistentKey" classname="com.kvds.storage.InMemoryStorageTest" time="0.001">
+    <system-out><![CDATA[23:21:13.484 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+]]></system-out>
+  </testcase>
+  <testcase name="testPutNullValue" classname="com.kvds.storage.InMemoryStorageTest" time="0.003">
+    <system-out><![CDATA[23:21:13.488 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+]]></system-out>
+  </testcase>
+  <testcase name="testDelete" classname="com.kvds.storage.InMemoryStorageTest" time="0.001">
+    <system-out><![CDATA[23:21:13.491 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+]]></system-out>
+  </testcase>
+  <testcase name="testPutNullKey" classname="com.kvds.storage.InMemoryStorageTest" time="0.003">
+    <system-out><![CDATA[23:21:13.493 [main] DEBUG com.kvds.storage.InMemoryStorage - InMemoryStorage initialized
+]]></system-out>
+  </testcase>
+</testsuite>
