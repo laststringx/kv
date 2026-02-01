@@ -1,0 +1,271 @@
+# KV-DS CLI - 20 Test Commands (Ready to Copy-Paste)
+
+## Instructions
+1. Run the CLI: `kvds.bat`
+2. Copy each command below and paste into the CLI
+3. Press Enter after each command
+4. Observe the output
+
+---
+
+## Test Case 1: Basic PUT and GET
+PUT username JohnDoe
+GET username
+
+## Test Case 2: Store Multiple Values
+PUT email john@example.com
+PUT age 25
+PUT city NewYork
+GET email
+GET age
+GET city
+
+## Test Case 3: Update Existing Value
+PUT status pending
+GET status
+PUT status completed
+GET status
+
+## Test Case 4: DELETE Operation
+PUT temp_data temporary
+GET temp_data
+DELETE temp_data
+GET temp_data
+
+## Test Case 5: GET Non-Existent Key
+GET nonexistent_key
+
+## Test Case 6: Store Numbers
+PUT count 100
+PUT price 99.99
+PUT year 2026
+GET count
+GET price
+
+## Test Case 7: Store with Underscores
+PUT full_name John_Doe_Smith
+PUT address 123_Main_Street
+GET full_name
+GET address
+
+## Test Case 8: Store with Dashes
+PUT phone-number 555-1234
+PUT date 2026-02-01
+GET phone-number
+GET date
+
+## Test Case 9: Store Session Data
+PUT session_id abc123xyz
+PUT user_id 12345
+PUT login_time 23:30:00
+GET session_id
+GET user_id
+GET login_time
+
+## Test Case 10: Multiple DELETEs
+PUT key1 value1
+PUT key2 value2
+PUT key3 value3
+DELETE key1
+DELETE key2
+GET key1
+GET key2
+GET key3
+
+## Test Case 11: PUT-DELETE-PUT Sequence
+PUT test_key first_value
+GET test_key
+DELETE test_key
+GET test_key
+PUT test_key second_value
+GET test_key
+
+## Test Case 12: Store Configuration
+PUT db_host localhost
+PUT db_port 5432
+PUT db_name myapp
+PUT db_user admin
+GET db_host
+GET db_port
+
+## Test Case 13: Store User Profile
+PUT user_name Alice
+PUT user_email alice@test.com
+PUT user_role admin
+PUT user_status active
+GET user_name
+GET user_role
+
+## Test Case 14: Check STATUS
+STATUS
+
+## Test Case 15: Store Special Characters
+PUT symbol_test value@#$%
+PUT number_test 123abc456
+GET symbol_test
+GET number_test
+
+## Test Case 16: Overwrite Multiple Times
+PUT counter 1
+GET counter
+PUT counter 2
+GET counter
+PUT counter 3
+GET counter
+
+## Test Case 17: Store Long Values
+PUT description ThisIsAVeryLongValueWithoutSpaces123456789
+PUT token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+GET description
+GET token
+
+## Test Case 18: DELETE Non-Existent Key
+DELETE does_not_exist
+
+## Test Case 19: Store and Retrieve Multiple
+PUT product_1 Laptop
+PUT product_2 Mouse
+PUT product_3 Keyboard
+PUT product_4 Monitor
+GET product_1
+GET product_2
+GET product_3
+GET product_4
+
+## Test Case 20: CLEAR All Data
+PUT before_clear value1
+PUT another_key value2
+GET before_clear
+CLEAR
+GET before_clear
+GET another_key
+
+---
+
+## Crash Recovery Test (Run in Two Sessions)
+
+### Session 1 - Store Data:
+```
+PUT important_data critical_value
+PUT user_session xyz789
+PUT timestamp 2026-02-01
+GET important_data
+EXIT
+```
+
+### Session 2 - Verify Recovery:
+```
+(Restart CLI with: kvds.bat)
+GET important_data
+GET user_session
+GET timestamp
+```
+
+---
+
+## Quick Copy-Paste Block (All 20 Test Cases)
+
+Copy everything below and paste into CLI (one command at a time):
+
+```
+PUT username JohnDoe
+GET username
+PUT email john@example.com
+PUT age 25
+PUT city NewYork
+GET email
+PUT status pending
+GET status
+PUT status completed
+GET status
+PUT temp_data temporary
+DELETE temp_data
+GET temp_data
+GET nonexistent_key
+PUT count 100
+PUT price 99.99
+GET count
+PUT full_name John_Doe_Smith
+GET full_name
+PUT phone-number 555-1234
+GET phone-number
+PUT session_id abc123xyz
+PUT user_id 12345
+GET session_id
+PUT key1 value1
+PUT key2 value2
+DELETE key1
+GET key1
+GET key2
+PUT test_key first_value
+DELETE test_key
+PUT test_key second_value
+GET test_key
+PUT db_host localhost
+PUT db_port 5432
+GET db_host
+PUT user_name Alice
+PUT user_role admin
+GET user_name
+STATUS
+PUT symbol_test value@#$%
+GET symbol_test
+PUT counter 1
+PUT counter 2
+PUT counter 3
+GET counter
+PUT description ThisIsAVeryLongValue
+GET description
+DELETE does_not_exist
+PUT product_1 Laptop
+PUT product_2 Mouse
+GET product_1
+PUT before_clear value1
+CLEAR
+GET before_clear
+HELP
+EXIT
+```
+
+---
+
+## Expected Outcomes
+
+✅ All PUT commands should show: `✓ Stored: <key> = <value>`  
+✅ All GET commands should return the stored value or "Key not found"  
+✅ All DELETE commands should show: `✓ Deleted: <key>`  
+✅ CLEAR should show: `✓ All data cleared`  
+✅ STATUS should display store information  
+✅ After EXIT and restart, data should be recovered from WAL  
+
+---
+
+## How to Use This File
+
+**Option 1 - Manual Testing:**
+1. Open `kvds.bat` 
+2. Copy commands one by one from this file
+3. Paste into CLI and press Enter
+4. Verify output matches expected results
+
+**Option 2 - Quick Test:**
+1. Copy the entire "Quick Copy-Paste Block"
+2. Paste into CLI
+3. Watch all commands execute
+
+**Option 3 - Crash Recovery Test:**
+1. Run Session 1 commands
+2. Exit CLI
+3. Restart CLI
+4. Run Session 2 commands
+5. Verify data persisted
+
+---
+
+## Notes
+
+- Commands are case-insensitive (PUT = put = Put)
+- Values with spaces won't work - use underscores
+- Pipe character `|` is not allowed in keys or values
+- Each test case is independent
+- WAL file `kvds-cli.log` stores all operations
