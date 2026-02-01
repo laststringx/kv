@@ -1,6 +1,7 @@
 com\kvds\wal\LogEntryTest.class
-com\kvds\core\KeyValueStoreImplTest.class
 com\kvds\recovery\RecoveryManagerImplTest.class
 com\kvds\wal\WriteAheadLogImplTest.class
 com\kvds\storage\InMemoryStorageTest.class
+com\kvds\core\KeyValueStoreImplTest.class
+com\kvds\demo\QuickDemo.class
 com\kvds\core\KeyValueStoreIntegrationTest.class
