@@ -5,9 +5,14 @@ C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\wal\WriteAheadLog.java
 C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\storage\Storage.java
 C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\wal\Operation.java
 C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\core\KeyValueStoreImpl.java
+C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\replication\NodeInfo.java
 C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\storage\InMemoryStorage.java
 C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\wal\LogEntry.java
 C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\recovery\RecoveryManagerImpl.java
+C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\replication\ReplicationMessage.java
+C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\replication\ReplicationManager.java
 C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\core\KeyValueStore.java
 C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\recovery\RecoveryManager.java
+C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\demo\ReplicationDemo.java
+C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\replication\SimpleReplicationManager.java
 C:\Users\pratt\source\repos\KV-DS\src\main\java\com\kvds\wal\WriteAheadLogImpl.java

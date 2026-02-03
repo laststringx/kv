@@ -4,5 +4,6 @@ com\kvds\recovery\RecoveryManagerImplTest.class
 com\kvds\wal\WriteAheadLogImplTest.class
 com\kvds\storage\InMemoryStorageTest.class
 com\kvds\core\KeyValueStoreImplTest.class
+com\kvds\replication\SimpleReplicationManagerTest.class
 com\kvds\demo\QuickDemo.class
 com\kvds\core\KeyValueStoreIntegrationTest.class
