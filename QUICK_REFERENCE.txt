@@ -1,0 +1,128 @@
+╔════════════════════════════════════════════════════════╗
+║           KV-DS Quick Reference Card                   ║
+╚════════════════════════════════════════════════════════╝
+
+🚀 START THE CLI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  kvds.bat
+
+
+📝 BASIC COMMANDS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  PUT <key> <value>     Store a key-value pair
+  GET <key>             Retrieve value for a key
+  DELETE <key>          Delete a key (alias: DEL)
+  CLEAR                 Clear all data
+  STATUS                Show store status
+  HELP                  Show help (alias: ?)
+  EXIT                  Exit CLI (alias: QUIT, Q)
+
+
+🎯 20 QUICK TEST COMMANDS (Copy & Paste)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PUT username JohnDoe
+GET username
+PUT email john@example.com
+GET email
+PUT age 25
+PUT city NewYork
+GET age
+GET city
+PUT status pending
+GET status
+PUT status completed
+GET status
+PUT temp_data temporary
+DELETE temp_data
+GET temp_data
+GET nonexistent_key
+PUT count 100
+PUT price 99.99
+GET count
+GET price
+PUT full_name John_Doe_Smith
+GET full_name
+PUT phone-number 555-1234
+GET phone-number
+PUT session_id abc123xyz
+GET session_id
+PUT key1 value1
+PUT key2 value2
+DELETE key1
+GET key1
+GET key2
+PUT test_key first_value
+DELETE test_key
+PUT test_key second_value
+GET test_key
+PUT db_host localhost
+GET db_host
+STATUS
+PUT symbol_test value@#$%
+GET symbol_test
+PUT counter 1
+PUT counter 2
+PUT counter 3
+GET counter
+PUT description ThisIsAVeryLongValue
+GET description
+PUT before_clear value1
+CLEAR
+GET before_clear
+HELP
+EXIT
+
+
+🔄 CRASH RECOVERY TEST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Session 1:
+  PUT important_data critical_value
+  PUT user_session xyz789
+  GET important_data
+  EXIT
+
+Session 2 (Restart CLI):
+  kvds.bat
+  GET important_data    ← Should return: critical_value
+  GET user_session      ← Should return: xyz789
+
+
+✅ OTHER WAYS TO TEST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  run-tests.bat         Run all 91 automated tests
+  run-demo.bat          Run visual demonstration
+
+
+📚 DOCUMENTATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  HOW_TO_RUN.md         ← START HERE
+  TEST_COMMANDS.txt     20 test commands
+  CLI_GUIDE.md          Complete CLI reference
+  README.md             Full documentation
+
+
+⚠️  LIMITATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✗ No pipe character (|) in keys/values
+  ✗ No newlines in values
+  ✗ Spaces in values need underscores
+  ✓ Everything else works!
+
+
+🌐 GITHUB
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  https://github.com/laststringx/kv
+
+
+💡 TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • Commands are case-insensitive
+  • Data persists across restarts (WAL enabled)
+  • WAL file: kvds-cli.log
+  • Use STATUS to check store info
+  • Use HELP anytime for command list
+
+
+🎉 YOU'RE ALL SET!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Just run: kvds.bat and start testing!

@@ -5,6 +5,7 @@ com\kvds\recovery\RecoveryManagerImpl.class
 com\kvds\wal\WriteAheadLog.class
 com\kvds\storage\InMemoryStorage.class
 com\kvds\wal\WriteAheadLogImpl.class
+com\kvds\wal\AsyncWriteAheadLog.class
 com\kvds\cli\KVDSCli.class
 com\kvds\storage\Storage.class
 com\kvds\wal\LogEntry.class
