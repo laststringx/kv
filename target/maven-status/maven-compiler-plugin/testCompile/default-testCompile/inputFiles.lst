@@ -1,5 +1,6 @@
 C:\Users\pratt\source\repos\KV-DS\src\test\java\com\kvds\storage\InMemoryStorageTest.java
 C:\Users\pratt\source\repos\KV-DS\src\test\java\com\kvds\wal\LogEntryTest.java
+C:\Users\pratt\source\repos\KV-DS\src\test\java\com\kvds\replication\SimpleReplicationManagerTest.java
 C:\Users\pratt\source\repos\KV-DS\src\test\java\com\kvds\wal\WriteAheadLogImplTest.java
 C:\Users\pratt\source\repos\KV-DS\src\test\java\com\kvds\recovery\RecoveryManagerImplTest.java
 C:\Users\pratt\source\repos\KV-DS\src\test\java\com\kvds\core\KeyValueStoreImplTest.java

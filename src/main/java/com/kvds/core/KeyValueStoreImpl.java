@@ -3,6 +3,7 @@ package com.kvds.core;
 import com.kvds.exception.KVDSException;
 import com.kvds.recovery.RecoveryManager;
 import com.kvds.recovery.RecoveryManagerImpl;
+import com.kvds.replication.ReplicationManager;
 import com.kvds.storage.Storage;
 import com.kvds.wal.LogEntry;
 import com.kvds.wal.Operation;
@@ -32,6 +33,7 @@ public class KeyValueStoreImpl implements KeyValueStore {
     private final Storage storage;
     private final WriteAheadLog wal;
     private final RecoveryManager recoveryManager;
+    private final ReplicationManager replicationManager;
     
     /**
      * Creates a new KeyValueStore with the given storage and WAL.
@@ -54,6 +56,20 @@ public class KeyValueStoreImpl implements KeyValueStore {
      * @param recoveryManager the recovery manager implementation
      */
     public KeyValueStoreImpl(Storage storage, WriteAheadLog wal, RecoveryManager recoveryManager) {
+        this(storage, wal, recoveryManager, null);
+    }
+    
+    /**
+     * Creates a new KeyValueStore with the given storage, WAL, recovery manager, and replication manager.
+     * This constructor allows for full dependency injection including replication support.
+     * Automatically performs recovery from WAL on startup.
+     * 
+     * @param storage the storage implementation
+     * @param wal the write-ahead log implementation
+     * @param recoveryManager the recovery manager implementation
+     * @param replicationManager the replication manager (optional, can be null)
+     */
+    public KeyValueStoreImpl(Storage storage, WriteAheadLog wal, RecoveryManager recoveryManager, ReplicationManager replicationManager) {
         if (storage == null) {
             throw new IllegalArgumentException("Storage cannot be null");
         }
@@ -67,11 +83,17 @@ public class KeyValueStoreImpl implements KeyValueStore {
         this.storage = storage;
         this.wal = wal;
         this.recoveryManager = recoveryManager;
+        this.replicationManager = replicationManager;
         
         // Perform recovery from WAL on startup
         try {
             recoveryManager.recover(wal, storage);
             logger.info("KeyValueStore initialized with WAL and recovery complete");
+            
+            if (replicationManager != null) {
+                replicationManager.start();
+                logger.info("Replication enabled");
+            }
         } catch (Exception e) {
             logger.error("Failed to recover from WAL", e);
             throw new KVDSException("Failed to initialize KeyValueStore: recovery failed", e);
@@ -91,6 +113,7 @@ public class KeyValueStoreImpl implements KeyValueStore {
         this.storage = storage;
         this.wal = null;
         this.recoveryManager = null;
+        this.replicationManager = null;
         logger.info("KeyValueStore initialized without WAL");
     }
     
@@ -108,6 +131,12 @@ public class KeyValueStoreImpl implements KeyValueStore {
             
             // Update in-memory storage
             storage.put(key, value);
+            
+            // Replicate to other nodes (async)
+            if (replicationManager != null && replicationManager.isPrimary()) {
+                replicationManager.replicatePut(key, value);
+            }
+            
             logger.debug("PUT successful: key={}", key);
         } catch (Exception e) {
             logger.error("PUT failed: key={}", key, e);
@@ -146,6 +175,12 @@ public class KeyValueStoreImpl implements KeyValueStore {
             
             // Update in-memory storage
             storage.delete(key);
+            
+            // Replicate to other nodes (async)
+            if (replicationManager != null && replicationManager.isPrimary()) {
+                replicationManager.replicateDelete(key);
+            }
+            
             logger.debug("DELETE successful: key={}", key);
         } catch (Exception e) {
             logger.error("DELETE failed: key={}", key, e);
@@ -167,6 +202,9 @@ public class KeyValueStoreImpl implements KeyValueStore {
     @Override
     public void close() {
         try {
+            if (replicationManager != null) {
+                replicationManager.stop();
+            }
             if (wal != null) {
                 wal.close();
             }

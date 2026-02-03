@@ -1,6 +1,6 @@
 # KV-DS: Key-Value Data Store with Write-Ahead Logging
 
-A simple, production-ready in-memory key-value data store with Write-Ahead Logging (WAL) for durability and automatic crash recovery.
+A simple, production-ready in-memory key-value data store with Write-Ahead Logging (WAL) for durability, automatic crash recovery, and multi-node replication.
 
 ## Features
 
@@ -8,6 +8,8 @@ A simple, production-ready in-memory key-value data store with Write-Ahead Loggi
 ✅ **Write-Ahead Logging (WAL)** - Durability guarantee for all write operations  
 ✅ **Automatic Recovery** - Replays WAL on startup to restore state after crashes  
 ✅ **Thread-Safe** - Concurrent access support using thread-safe data structures  
+✅ **Data Replication** - Asynchronous replication across multiple nodes  
+✅ **Automatic Failover** - Automatic primary election when primary node fails  
 ✅ **SOLID Principles** - Clean architecture with clear separation of concerns  
 ✅ **Comprehensive Tests** - Unit and integration tests with >80% coverage  
 
@@ -16,8 +18,9 @@ A simple, production-ready in-memory key-value data store with Write-Ahead Loggi
 The project follows SOLID principles with clear separation of concerns:
 
 - **Storage Layer** (`Storage`, `InMemoryStorage`) - Manages in-memory key-value storage
-- **WAL Layer** (`WriteAheadLog`, `WriteAheadLogImpl`) - Handles durable logging
+- **WAL Layer** (`WriteAheadLog`, `WriteAheadLogImpl`, `AsyncWriteAheadLog`) - Handles durable logging
 - **Recovery Layer** (`RecoveryManager`, `RecoveryManagerImpl`) - Replays WAL on startup
+- **Replication Layer** (`ReplicationManager`, `SimpleReplicationManager`) - Multi-node replication and failover
 - **Core Layer** (`KeyValueStore`, `KeyValueStoreImpl`) - Coordinates all operations
 
 ### Write-Ahead Logging Pattern
